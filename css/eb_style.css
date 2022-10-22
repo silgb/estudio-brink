@@ -612,7 +612,9 @@ section h1, h2{
 
 .carousel__contenedor {
 	position: relative;
+    padding: 2em;
 }
+
 
 .carousel__anterior,
 .carousel__siguiente {
@@ -649,8 +651,6 @@ section h1, h2{
 
 .carousel__elemento img{
     align-items: center;
-    width: 10em;
-    height: 10em;
 }
 
 .carousel__indicadores .glider-dot {
@@ -679,7 +679,29 @@ section h1, h2{
         width: 90%;
         margin: 0%;
     }
+    .tres{
+        width: 100%;
+        padding: 0%;
+        margin-left: 10em;
+    }
+    .tres img{
+        width: 80%;
+    }
+    footer > div.footer_container{
+        padding: 4em;
+    }
+
+    footer > div.footer_container > div.texto > p, div.footer_container > div.texto > p > a{
+        font-size: 1.1em;
+    }
+
+    footer .iconos i{
+        width: 2em;
+        height: 2em;
+    }
 }
+
+
 @media (max-width:1200px){
     .dos {
         padding: 0em 4em 4em 2em;
@@ -699,6 +721,9 @@ section h1, h2{
         width: 100%;
         margin: 0%;
     }
+   footer .iconos i{
+    width: auto;
+   }
 
 }
 @media (max-width:1000px){
@@ -713,17 +738,26 @@ section h1, h2{
         width: 100%;
         margin: 0%;
     }
-    .tres{
-        padding-left: 9em;
-    }
 }
 
 @media screen and (max-width: 800px) {
+    div.carousel__elemento glider-slide active left-1 visible{
+        width: 7em;
+    } 
+    .carousel__contenedor > .carousel__lista.glider.draggable > .glider-track > div {
+        width: 1em;
+        text-align: center;
+    }
+
+    .glider.draggable .glider-slide img{
+        width: 30%;
+    }
+
     .container_bran .uno img{
         padding: 0;
     }
     .dos{
-        padding: 0 2em 1em 2em;;
+        padding: 0 2em 2.5em 2em;;
     }
     
     div.dos p{
@@ -731,9 +765,8 @@ section h1, h2{
         width: 100%;
 
     }
-    .tres{
-        padding-top: 1em;
-        padding-left: 7em;
+    .tres img{
+        margin:0;
     }
     .carousel__contenedor{
         margin-top: 2em;
@@ -746,16 +779,24 @@ section h1, h2{
 	.contenido-principal > * {
 		width: 100%;
 	}
+
+    body > footer > div > div.iconos > a.twitter > i{
+        margin:1em 1em 1em 0;
+    }
 }
+
 
 @media (max-width:700px){
     .container_bran{
-        padding: 1.3em;
+        padding: 0%;
     }
-    
     .uno {
         width: 100%;
         margin: auto;
+    }
+    .uno img{
+        width: 100%;
+        margin: 0%;
     }
     .dos{
         width: 100%;
@@ -763,11 +804,10 @@ section h1, h2{
         padding: 0%;
     }
     .dos p{
-        padding: 1.9em;
+        padding: 2.5em 7.9em;
     }
     .tres, .tres img{
         width: 100%;
-        padding: 3%;
         margin: auto;
     }
     body > main > section > h2{
@@ -779,11 +819,7 @@ section h1, h2{
     section h1, h2{
         font-size: 2em;
     }
-    .container_bran{
-        flex-direction: column;
-        padding: 0%;
-        justify-content: center;
-    }
+
     .uno{
         width: 100vw;
         margin: 0 auto;
@@ -804,6 +840,9 @@ section h1, h2{
     }
     .tres, .tres img{
         padding: 0em;
+    }
+    .glider.draggable .glider-slide img{
+        width: 45%;
     }
 }
 
@@ -835,6 +874,9 @@ section h1, h2{
         padding: 0%;
         width: 100vw;
         max-width: 319px;
+    }
+    .glider.draggable .glider-slide img{
+        width: 45%;
     }
 }
 
