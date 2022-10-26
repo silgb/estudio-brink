@@ -38,19 +38,52 @@ div{
 .nosotros_container h1{
     justify-content: center;
     padding-top: 0.5em;
-    font-size: 6em;
+    font-size: 7em;
     font-family:'Qwitcher Grypen', cursive ;
     color: #F25749;
-    max-width: 50%;
+    max-width: 40%;
     flex-grow: 20;
+    animation-duration: 2s;
+    animation-name: slidein; 
 }
+
+@keyframes slidein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
 .nosotros_container p{
     font-family: 'Source Serif Pro', serif;
-    font-weight: 300;
-    max-width: 43%;
+    font-weight: 500;
+    font-size: 1.4em;
+    max-width: 60%;
+    line-height: 2em;
     padding: 2em;
     justify-content: center;
     flex-grow: 1;
+    letter-spacing: .1em;
+    color: black;
+    animation-duration: 4s;
+    animation-name: slidein; 
+}
+
+@keyframes slidein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+span{
+    font-family:'BIZ UDPMincho', serif;
+    font-size: 1.8em;
+    font-style: normal;
 }
 p strong{
     font-weight: 500;
@@ -59,7 +92,8 @@ p strong{
 }
 p b{
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 @media (max-width:768px) {
@@ -93,7 +127,7 @@ p b{
      }
     .nosotros_container h1 {
         padding-bottom: 0%;
-        font-size: 3.2em;
+        font-size: 4em;
         max-width: 100%;
         text-align: center;
     }
@@ -122,6 +156,8 @@ p b{
     padding-bottom: 0%;
     font-weight: 300;
     text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
 .servicios h3 {
@@ -129,6 +165,8 @@ p b{
     font-weight: 200;
     font-size: 1.3em;
     text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 .servicios_container{
     padding-top: 3em;
@@ -155,7 +193,10 @@ p b{
     text-decoration: none;
     color: black;
     align-items: baseline;
+    animation-duration: 3s;
+    animation-name: slidein; 
 }
+
 .servicios_container article{
     text-align: center;
 }
@@ -166,6 +207,17 @@ p b{
     height: 4.5rem;
     padding-left: 1.5em;
     padding-right:1.5em ;
+    animation-duration: 3s;
+    animation-name: slidein; 
+}
+
+@keyframes slidein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 article h4{
@@ -238,6 +290,8 @@ section.proyectos_destacados{
     font-weight: 200;
     text-align: center;
     padding-top: 0.8em;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
 .proyectos_destacados h2{
@@ -247,6 +301,8 @@ section.proyectos_destacados{
     font-weight: 300;
     font-size: 3em;
     text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 .proy_destacado_container{
     padding-top: 3em;
@@ -259,6 +315,8 @@ section.proyectos_destacados{
     width: 21.3em;
     height: 21.3em;
     padding: .3em;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
 button {
@@ -320,6 +378,9 @@ button:hover {
 }
 
 @media (max-width:320px){
+    body > main > section.proyectos_destacados{
+        padding: 0%;
+    }
     .proyectos_destacados h3{
         font-size: 1em;
     }
@@ -327,8 +388,8 @@ button:hover {
         font-size: 2em;
     }
     .proy_destacado_container img{ 
-    width: 18em;
-    height: 18em;
+    width: 100%;
+    height: auto;
     flex-wrap: nowrap;
 }
 }
@@ -415,6 +476,14 @@ footer h4,p,h6 {
 }
 
 @media (max-width:320px){
+    body footer .footer_container{
+        padding: 0%;
+    }
+
+    body > footer > div > div.texto > p > a{
+        font-size: 1em;
+    }
+
     div .iconos{
         text-align: left;
     }
@@ -424,7 +493,7 @@ footer h4,p,h6 {
     }
     i{
         text-align: left;
-        padding-left: 0%;
+        padding:2%;
     }
 }
 
@@ -440,6 +509,8 @@ footer h4,p,h6 {
     margin: auto;
     padding: 2em;
     margin-bottom: 3em;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
 
@@ -557,6 +628,11 @@ h1 {
 /* ------------------------------------------------------------------------- */
 
 /* COMIENZO DE BRANDING ------------------------------------------otra pagina*/
+
+body{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
 
 section h1, h2{
     padding-top: 2em;
